@@ -11,6 +11,9 @@ class Adapter(activity: FragmentActivity) : FragmentStateAdapter(activity) {
     override fun createFragment(position: Int) =
         PageFragment.newInstance(list[position])
 
+    /**
+     * Reverse the order of pages.
+     */
     fun reorder() {
         list = list.reversed()
         notifyDataSetChanged()

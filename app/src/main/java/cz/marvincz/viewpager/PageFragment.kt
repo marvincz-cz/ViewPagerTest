@@ -8,6 +8,9 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.page_test.*
 
+/**
+ * Page showing a single TextView in the middle
+ */
 class PageFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
