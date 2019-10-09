@@ -1,10 +1,10 @@
 # ViewPagerTest
-Sample application and instrumented test to demonstrate *ViewPager2* *notifyDataSetChanged()* issues.
+Sample application and instrumented test to demonstrate an issue with *notifyDataSetChanged()* in *ViewPager2* and *FragmentStateAdapter*.
 
 ## Application structure
 The application consists of a single activity with a ViewPager2 and a FAB.
 
-The ViewPager is backed by a simple list and shows two pages, **A** and **B** (showing the corresponding letter).
+The ViewPager uses an adapter based on *FragmentStateAdapter*. It is backed by a list and shows two pages, **A** and **B** (showing the corresponding letter).
 
 Pressing the FAB reverses the order of the backing list.
 
