@@ -1,7 +1,7 @@
 # ViewPagerTest
 Sample application and instrumented test to demonstrate *ViewPager2* *notifyDataSetChanged()* issues.
 
-## 
+## Application structure
 The application consists of a single activity with a ViewPager2 and a FAB.
 
 The ViewPager is backed by a simple list and shows two pages, **A** and **B** (showing the corresponding letter).
