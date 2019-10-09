@@ -12,10 +12,18 @@ class Adapter(activity: FragmentActivity) : FragmentStateAdapter(activity) {
         PageFragment.newInstance(list[position])
 
     /**
-     * Reverse the order of pages.
+     * Reverse the order of pages. Uses [notifyDataSetChanged]
      */
-    fun reorder() {
+    fun reorderNotifyDataSetChanged() {
         list = list.reversed()
         notifyDataSetChanged()
+    }
+
+    /**
+     * Reverse the order of pages. Uses [notifyItemRangeChanged]
+     */
+    fun reorderNotifyItemRangeChanged() {
+        list = list.reversed()
+        notifyItemRangeChanged(0, list.size)
     }
 }

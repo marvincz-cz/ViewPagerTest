@@ -12,6 +12,6 @@ class MainActivity : FragmentActivity() {
         val adapter = Adapter(this)
         pager.adapter = adapter
 
-        fab.setOnClickListener { adapter.reorder() }
+        fab.setOnClickListener { adapter.reorderNotifyDataSetChanged() }
     }
 }
